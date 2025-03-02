@@ -1,0 +1,333 @@
+[
+    {
+      "name": "Carlos Gómez",
+      "phone": "555-0101",
+      "email": "carlos.gomez@email.com",
+      "address": "Calle Falsa 123, Ciudad de México, CDMX"
+    },
+    {
+      "name": "María Rodríguez",
+      "phone": "555-0102",
+      "email": "maria.rodriguez@email.com",
+      "address": "Avenida Insurgentes 456, Monterrey, NL"
+    },
+    {
+      "name": "Luis Pérez",
+      "phone": "555-0103",
+      "email": "luis.perez@email.com",
+      "address": "Calle 5 de Febrero 789, Guadalajara, Jalisco"
+    },
+    {
+      "name": "Ana Fernández",
+      "phone": "555-0104",
+      "email": "ana.fernandez@email.com",
+      "address": "Calle Juárez 101, Puebla, Pue."
+    },
+    {
+      "name": "Juan Sánchez",
+      "phone": "555-0105",
+      "email": "juan.sanchez@email.com",
+      "address": "Calle Hidalgo 202, Mérida, Yucatán"
+    },
+    {
+      "name": "Patricia López",
+      "phone": "555-0106",
+      "email": "patricia.lopez@email.com",
+      "address": "Boulevard Adolfo López Mateos 303, Tijuana, BC"
+    },
+    {
+      "name": "José Martínez",
+      "phone": "555-0107",
+      "email": "jose.martinez@email.com",
+      "address": "Avenida Reforma 404, León, Guanajuato"
+    },
+    {
+      "name": "Carmen González",
+      "phone": "555-0108",
+      "email": "carmen.gonzalez@email.com",
+      "address": "Calle Revolución 505, Querétaro, Qro."
+    },
+    {
+      "name": "Ricardo Díaz",
+      "phone": "555-0109",
+      "email": "ricardo.diaz@email.com",
+      "address": "Avenida Universidad 606, Oaxaca, Oax."
+    },
+    {
+      "name": "Sofía López",
+      "phone": "555-0110",
+      "email": "sofia.lopez@email.com",
+      "address": "Calle Morelos 707, Veracruz, Ver."
+    },
+    {
+      "name": "Fernando García",
+      "phone": "555-0111",
+      "email": "fernando.garcia@email.com",
+      "address": "Calle del Sol 808, Cancún, QR"
+    },
+    {
+      "name": "Elena Martínez",
+      "phone": "555-0112",
+      "email": "elena.martinez@email.com",
+      "address": "Calle Juárez 909, Morelia, Mich."
+    },
+    {
+      "name": "Raúl Rodríguez",
+      "phone": "555-0113",
+      "email": "raul.rodriguez@email.com",
+      "address": "Avenida Las Américas 1010, Saltillo, Coah."
+    },
+    {
+      "name": "Beatriz Fernández",
+      "phone": "555-0114",
+      "email": "beatriz.fernandez@email.com",
+      "address": "Calle 16 de Septiembre 1111, Hermosillo, Sonora"
+    },
+    {
+      "name": "Santiago Pérez",
+      "phone": "555-0115",
+      "email": "santiago.perez@email.com",
+      "address": "Calle Santa Rosa 1212, San Luis Potosí, SLP"
+    },
+    {
+      "name": "Raquel Sánchez",
+      "phone": "555-0116",
+      "email": "raquel.sanchez@email.com",
+      "address": "Calle 20 de Noviembre 1313, Aguascalientes, AGS"
+    },
+    {
+      "name": "Martín López",
+      "phone": "555-0117",
+      "email": "martin.lopez@email.com",
+      "address": "Calle San Pedro 1414, Zacatecas, Zac."
+    },
+    {
+      "name": "Lucía Díaz",
+      "phone": "555-0118",
+      "email": "lucia.diaz@email.com",
+      "address": "Avenida Benito Juárez 1515, Durango, Dgo."
+    },
+    {
+      "name": "Antonio Gómez",
+      "phone": "555-0119",
+      "email": "antonio.gomez@email.com",
+      "address": "Calle 27 de Febrero 1616, Chihuahua, Chih."
+    },
+    {
+      "name": "Marta García",
+      "phone": "555-0120",
+      "email": "marta.garcia@email.com",
+      "address": "Calle del Río 1717, Culiacán, Sinaloa"
+    },
+    {
+      "name": "Óscar González",
+      "phone": "555-0121",
+      "email": "oscar.gonzalez@email.com",
+      "address": "Avenida del Mar 1818, Mazatlán, Sinaloa"
+    },
+    {
+      "name": "Verónica Díaz",
+      "phone": "555-0122",
+      "email": "veronica.diaz@email.com",
+      "address": "Calle El Paraíso 1919, La Paz, BCS"
+    },
+    {
+      "name": "Javier Rodríguez",
+      "phone": "555-0123",
+      "email": "javier.rodriguez@email.com",
+      "address": "Calle Libertad 2020, Tuxtla Gutiérrez, Chiapas"
+    },
+    {
+      "name": "Claudia Sánchez",
+      "phone": "555-0124",
+      "email": "claudia.sanchez@email.com",
+      "address": "Calle 9 de Julio 2121, Torreón, Coah."
+    },
+    {
+      "name": "Eduardo Pérez",
+      "phone": "555-0125",
+      "email": "eduardo.perez@email.com",
+      "address": "Avenida Tulum 2222, Cancún, QR"
+    },
+    {
+      "name": "Raúl González",
+      "phone": "555-0126",
+      "email": "raul.gonzalez@email.com",
+      "address": "Calle del Ángel 2323, Mérida, Yucatán"
+    },
+    {
+      "name": "Julia Fernández",
+      "phone": "555-0127",
+      "email": "julia.fernandez@email.com",
+      "address": "Calle Reforma 2424, Guadalajara, Jalisco"
+    },
+    {
+      "name": "Francisco López",
+      "phone": "555-0128",
+      "email": "francisco.lopez@email.com",
+      "address": "Avenida de los Insurgentes 2525, Querétaro, Qro."
+    },
+    {
+      "name": "Pedro Martínez",
+      "phone": "555-0129",
+      "email": "pedro.martinez@email.com",
+      "address": "Calle Aldama 2626, Zacatecas, Zac."
+    },
+    {
+      "name": "Silvia González",
+      "phone": "555-0130",
+      "email": "silvia.gonzalez@email.com",
+      "address": "Calle San José 2727, Tijuana, BC"
+    },
+    {
+      "name": "Héctor Sánchez",
+      "phone": "555-0131",
+      "email": "hector.sanchez@email.com",
+      "address": "Avenida Benito Juárez 2828, San Luis Potosí, SLP"
+    },
+    {
+      "name": "Carolina Díaz",
+      "phone": "555-0132",
+      "email": "carolina.diaz@email.com",
+      "address": "Calle Francisco I. Madero 2929, Tuxtla Gutiérrez, Chiapas"
+    },
+    {
+      "name": "Mónica Pérez",
+      "phone": "555-0133",
+      "email": "monica.perez@email.com",
+      "address": "Calle Zaragoza 3030, Oaxaca, Oax."
+    },
+    {
+      "name": "Isabel Rodríguez",
+      "phone": "555-0134",
+      "email": "isabel.rodriguez@email.com",
+      "address": "Calle Hidalgo 3131, Mazatlán, Sinaloa"
+    },
+    {
+      "name": "David García",
+      "phone": "555-0135",
+      "email": "david.garcia@email.com",
+      "address": "Avenida 5 de Febrero 3232, Aguascalientes, AGS"
+    },
+    {
+      "name": "Rosa López",
+      "phone": "555-0136",
+      "email": "rosa.lopez@email.com",
+      "address": "Calle del Sol 3333, León, Guanajuato"
+    },
+    {
+      "name": "Tomás González",
+      "phone": "555-0137",
+      "email": "tomas.gonzalez@email.com",
+      "address": "Calle Lázaro Cárdenas 3434, Veracruz, Ver."
+    },
+    {
+      "name": "Gabriela Fernández",
+      "phone": "555-0138",
+      "email": "gabriela.fernandez@email.com",
+      "address": "Calle de los Santos 3535, Puebla, Pue."
+    },
+    {
+      "name": "Adrián Sánchez",
+      "phone": "555-0139",
+      "email": "adrian.sanchez@email.com",
+      "address": "Calle Benito Juárez 3636, Chihuahua, Chih."
+    },
+    {
+      "name": "Julia Gómez",
+      "phone": "555-0140",
+      "email": "julia.gomez@email.com",
+      "address": "Avenida del Norte 3737, Morelia, Mich."
+    },
+    {
+      "name": "Ricardo González",
+      "phone": "555-0141",
+      "email": "ricardo.gonzalez@email.com",
+      "address": "Calle La Paz 3838, Mazatlán, Sinaloa"
+    },
+    {
+      "name": "Joaquín Pérez",
+      "phone": "555-0142",
+      "email": "joaquin.perez@email.com",
+      "address": "Calle del Centro 3939, Culiacán, Sinaloa"
+    },
+    {
+      "name": "Lorena Díaz",
+      "phone": "555-0143",
+      "email": "lorena.diaz@email.com",
+      "address": "Calle San Diego 4040, Mérida, Yucatán"
+    },
+    {
+      "name": "Alberto López",
+      "phone": "555-0144",
+      "email": "alberto.lopez@email.com",
+      "address": "Avenida Las Palmas 4141, Cancún, QR"
+    },
+    {
+      "name": "Patricia Rodríguez",
+      "phone": "555-0145",
+      "email": "patricia.rodriguez@email.com",
+      "address": "Calle Morelos 4242, Veracruz, Ver."
+    },
+    {
+      "name": "José Díaz",
+      "phone": "555-0146",
+      "email": "jose.diaz@email.com",
+      "address": "Calle Lázaro Cárdenas 4343, Guadalajara, Jalisco"
+    },
+    {
+      "name": "Alma Fernández",
+      "phone": "555-0147",
+      "email": "alma.fernandez@email.com",
+      "address": "Calle del Parque 4444, León, Guanajuato"
+    },
+    {
+      "name": "José Antonio Pérez",
+      "phone": "555-0148",
+      "email": "jose.antonio.perez@email.com",
+      "address": "Calle de los Héroes 4545, Puebla, Pue."
+    },
+    {
+      "name": "Adriana Gómez",
+      "phone": "555-0149",
+      "email": "adriana.gomez@email.com",
+      "address": "Calle 12 de Octubre 4646, Querétaro, Qro."
+    },
+    {
+      "name": "Juan Carlos López",
+      "phone": "555-0150",
+      "email": "juancarlos.lopez@email.com",
+      "address": "Calle San Juan 4747, Hermosillo, Sonora"
+    },
+    {
+      "name": "Felipe Sánchez",
+      "phone": "555-0151",
+      "email": "felipe.sanchez@email.com",
+      "address": "Avenida Constitución 4848, Tijuana, BC"
+    },
+    {
+      "name": "Susana Martínez",
+      "phone": "555-0152",
+      "email": "susana.martinez@email.com",
+      "address": "Calle del Sol 4949, Guadalajara, Jalisco"
+    },
+    {
+      "name": "Ricardo Sánchez",
+      "phone": "555-0153",
+      "email": "ricardo.sanchez@email.com",
+      "address": "Avenida Libertador 5050, Mérida, Yucatán"
+    },
+    {
+      "name": "Esteban Rodríguez",
+      "phone": "555-0154",
+      "email": "esteban.rodriguez@email.com",
+      "address": "Calle San Francisco 5151, Oaxaca, Oax."
+    },
+    {
+      "name": "Mónica González",
+      "phone": "555-0155",
+      "email": "monica.gonzalez@email.com",
+      "address": "Calle de la Paz 5252, León, Guanajuato"
+    }
+  ]
+  
