@@ -53,10 +53,7 @@
                 Utilities.WriteTitle("AGENDA DE CONTACTOS");
                 Utilities.ShortcutsMenu(shortcuts);
                 LoadContactList();
-                Console.SetCursorPosition(0, Console.WindowHeight - 4);
-                Console.ForegroundColor = ConsoleColor.DarkMagenta;
-                Console.Write(new string('-', maxLength + 4));
-
+                
                 while (true)
                 {
                     kCode = Console.ReadKey(true);
@@ -115,6 +112,12 @@
             for (int i = limit; i < MaxContactCount; i++) list += new string(' ', maxLength + 2) + '\n'; // Cleaning
             Console.SetCursorPosition(0, 4);
             Console.Write(list);
+
+            Console.SetCursorPosition(0, Console.WindowHeight - 4);
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.Write(new string('-', maxLength + 4));
+            Console.ResetColor();
+
             if (selected > -1 && selected < MaxContactCount) SelectRow();
         }
 
@@ -197,12 +200,20 @@
         static void ContactInfo(string[] data)
         {
             int i = 0;
-            string template = "";
+            string template;
+            string[] _data = new string[data.Count()];
 
-            template += $"Nombre     :  {data[0]}\n";
-            template += $"Teléfono   :  {data[1]}\n";
-            template += $"Correo     :  {data[2]}\n";
-            template += $"Dirección  :  {data[3]}";
+            Action PrintForm = () =>
+            {
+                template = "";
+                template += $"Nombre     :  {data[0]}\n";
+                template += $"Teléfono   :  {data[1]}\n";
+                template += $"Correo     :  {data[2]}\n";
+                template += $"Dirección  :  {data[3]}";
+
+                Utilities.WriteTitle("Información de Contacto");
+                Utilities.Print(template);
+            };
 
             Action<sbyte> focusField = (sbyte s) =>
             {
@@ -226,11 +237,13 @@
                     { selected == -1 ? "!g" : "!g", selected == -1 ? "Crear" : "Guardar" },
                     { "esc", "Cancelar" }
                 };
+
                 Utilities.ShortcutsMenu(shortcuts);
                 Console.SetCursorPosition(16 + data[i].Length, 2 + i);
                 Console.Write('█');
                 readOnly = false;
             };
+
             Action disableEditionMode = () =>
             {
                 string[,] shortcuts =
@@ -251,8 +264,7 @@
             };
 
             // ========= Printing ==========
-            Utilities.WriteTitle("Información de Contacto");
-            Utilities.Print(template);
+            PrintForm();
             (readOnly ? disableEditionMode : enableEditionMode)();
 
             bool blocked = false;
@@ -265,8 +277,12 @@
                 // Visualization mode
                 if (readOnly)
                 {
-                    if (kCode.KeyChar == 69 || kCode.KeyChar == 101) enableEditionMode();   //eE
-                    else if (kCode.KeyChar == 27 && SaveContactInfo(data)) return;   // esc
+                    if (kCode.KeyChar == 69 || kCode.KeyChar == 101) // eE 
+                    {
+                        data.CopyTo(_data, 0);
+                        enableEditionMode();
+                    }
+                    else if (kCode.KeyChar == 27 &&  SaveContactInfo(data)) return;
                 }
                 // Edition mode
                 else if (blocked)
@@ -274,11 +290,7 @@
                     if (kCode.KeyChar == 71 || kCode.KeyChar == 103) // gG
                     {
                         if (selected != -1) disableEditionMode();
-                        else if (SaveContactInfo(data))
-                        {
-                            SortContacts();
-                            return;
-                        }
+                        else if (SaveContactInfo(data)) return;
                     }
                     blocked = false;
                     Utilities.ClearAlert();
@@ -293,6 +305,12 @@
                     continue;
                 }
                 else if (kCode.KeyChar == 27 && selected == -1) return;  // esc (cancel creation)
+                else if (kCode.KeyChar == 27) 
+                {
+                    _data.CopyTo(data, 0);
+                    PrintForm();
+                    disableEditionMode();
+                }
                 else Utilities.WriteInField(kCode.KeyChar, ref data[i]);
             }
         }
@@ -300,6 +318,7 @@
         static bool SaveContactInfo(string[] data)
         {
             bool success = false;
+
             if (data[0].Trim() == "") Utilities.ShowAlert("Por favor ingrese un nombre de contacto", true);
             else if (data[1].Trim() == "") Utilities.ShowAlert("Se requiere un número de teléfono", true);
             else if (CurrentContact == -1 && contacts.Exists(c => c.Phone == data[1]))
@@ -316,8 +335,10 @@
                 contacts[i].Phone = data[1];
                 contacts[i].Email = data[2];
                 contacts[i].Address = data[3];
+                SortContacts();
                 success = true;
             }
+
             return success;
         }
 
@@ -374,6 +395,7 @@
                 }
                 
                 deletedContacts = null;
+                SortContacts();
                 LoadContactList();
             }
         }
